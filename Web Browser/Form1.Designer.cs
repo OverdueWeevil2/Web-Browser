@@ -43,7 +43,7 @@ namespace Web_Browser
             this.webBrowser1.Location = new System.Drawing.Point(0, 20);
             this.webBrowser1.Margin = new System.Windows.Forms.Padding(0);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(800, 450);
+            this.webBrowser1.Size = new System.Drawing.Size(800, 428);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("https://google.com", System.UriKind.Absolute);
             // 
