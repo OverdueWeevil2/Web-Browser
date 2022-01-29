@@ -54,6 +54,7 @@ namespace Web_Browser
             this.TxTA.Name = "TxTA";
             this.TxTA.Size = new System.Drawing.Size(800, 20);
             this.TxTA.TabIndex = 1;
+            this.TxTA.Text = "https://google.com";
             // 
             // button1
             // 
@@ -77,7 +78,7 @@ namespace Web_Browser
             this.Controls.Add(this.TxTA);
             this.Controls.Add(this.webBrowser1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Web Browser";
             this.ResumeLayout(false);
             this.PerformLayout();
 
