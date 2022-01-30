@@ -1,5 +1,5 @@
 # Web Browser
-You can browse the web with this application.
+Web Browser is an application with which you can browse the Internet.
 ## Links
 [Download Web Browser (or source code)](https://github.com/OverdueWeevil2/Web-Browser/releases)
 
