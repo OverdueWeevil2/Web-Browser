@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +19,7 @@ namespace Web_Browser
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            webBrowser1.Url = new Uri(TxTA.Text);
+            webBrowser1.Navigate(new Uri(TxTA.Text));
         }
         
         private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
@@ -31,7 +31,7 @@ namespace Web_Browser
         {
            if (e.KeyCode == Keys.Enter)
            {
-              webBrowser1.Url = new Uri(TxTA.Text);
+              webBrowser1.Navigate(new Uri(TxTA.Text));
            }
         }
     }
