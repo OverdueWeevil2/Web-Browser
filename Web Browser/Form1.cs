@@ -21,5 +21,18 @@ namespace Web_Browser
         {
             webBrowser1.Url = new Uri(TxTA.Text);
         }
+        
+        private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
+        {
+            TxTA.Text = webBrowser1.Url();
+        }
+        
+        private void TxTA_KeyDown(object sender, KeyEventArgs e)
+        {
+           if (e.KeyCode == Keys.Enter)
+           {
+              webBrowser1.Url = new Uri(TxTA.Text);
+           }
+        }
     }
 }
