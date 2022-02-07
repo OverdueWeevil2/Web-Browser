@@ -24,7 +24,7 @@ namespace Web_Browser
         
         private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
         {
-            TxTA.Text = webBrowser1.Url;
+            TxTA.Text = webBrowser1.Url.ToString();
         }
         
         private void TxTA_KeyDown(object sender, KeyEventArgs e)
