@@ -15,6 +15,7 @@ namespace Web_Browser
         public Form1()
         {
             InitializeComponent();
+            TxTA.KeyDown += TXTA_KeyDown;
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -24,10 +25,10 @@ namespace Web_Browser
         
         private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
         {
-            TxTA.Text = webBrowser1.Url.ToString();
+            TxTA.Text = e.Url.ToString();
         }
         
-        private void TxTA_KeyDown(object sender, KeyEventArgs e)
+        private void TXTA_KeyDown(object sender, KeyEventArgs e)
         {
            if (e.KeyCode == Keys.Enter)
            {
