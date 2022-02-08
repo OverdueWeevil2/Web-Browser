@@ -16,6 +16,8 @@ namespace Web_Browser
         {
             InitializeComponent();
             TxTA.KeyDown += TXTA_KeyDown;
+            webBrowser1.Navigated +=
+                new WebBrowserNavigatedEventHandler(webBrowser1_Navigated);
         }
 
         private void Button1_Click(object sender, EventArgs e)
