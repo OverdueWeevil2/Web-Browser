@@ -37,5 +37,10 @@ namespace Web_Browser
               webBrowser1.Navigate(new Uri(TxTA.Text));
            }
         }
+
+        private void webBrowser1_StatusTextChanged(object sender, EventArgs e)
+        {
+            TxTA.Text = webBrowser1.StatusText;
+        }
     }
 }
