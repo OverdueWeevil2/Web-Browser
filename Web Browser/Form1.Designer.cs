@@ -33,15 +33,18 @@ namespace Web_Browser
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.TxTA = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // webBrowser1
             // 
+            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.webBrowser1.Location = new System.Drawing.Point(0, 20);
             this.webBrowser1.Margin = new System.Windows.Forms.Padding(0);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(800, 421);
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.Size = new System.Drawing.Size(800, 441);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("https://google.com", System.UriKind.Absolute);
             // 
@@ -68,24 +71,14 @@ namespace Web_Browser
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(0, 441);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ShortcutsEnabled = false;
-            this.textBox1.Size = new System.Drawing.Size(800, 20);
-            this.textBox1.TabIndex = 3;
-            // 
             // Form1
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 461);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TxTA);
             this.Controls.Add(this.webBrowser1);
@@ -101,7 +94,6 @@ namespace Web_Browser
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.TextBox TxTA;
         private System.Windows.Forms.Button button1;
-        private TextBox textBox1;
     }
 }
 
