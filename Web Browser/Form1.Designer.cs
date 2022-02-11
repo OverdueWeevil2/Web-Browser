@@ -46,7 +46,7 @@ namespace Web_Browser
             this.webBrowser1.ScriptErrorsSuppressed = true;
             this.webBrowser1.Size = new System.Drawing.Size(800, 441);
             this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.Url = new System.Uri("https://google.com", System.UriKind.Absolute);
+            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             // 
             // TxTA
             // 
@@ -56,7 +56,6 @@ namespace Web_Browser
             this.TxTA.Name = "TxTA";
             this.TxTA.Size = new System.Drawing.Size(800, 20);
             this.TxTA.TabIndex = 1;
-            this.TxTA.Text = "https://google.com";
             // 
             // button1
             // 
@@ -76,8 +75,6 @@ namespace Web_Browser
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 461);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TxTA);

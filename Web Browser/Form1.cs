@@ -8,6 +8,7 @@ namespace Web_Browser
         public Form1()
         {
             InitializeComponent();
+            webBrowser1.GoHome();
             TxTA.KeyDown += TXTA_KeyDown;
             webBrowser1.Navigated +=
                 new WebBrowserNavigatedEventHandler(webBrowser1_Navigated);
